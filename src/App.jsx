@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-       <div>hi</div>
+      <div className="text-3xl font-bold text-blue-500">
+      Tailwind is working!
+    </div>
     </>
   )
 }
