@@ -1,7 +1,9 @@
 import "./App.css";
+import Home from "./Pages/Home/Home";
 function App() {
   return (
     <>
+    <Home />
      <div style={{ backgroundColor: 'var(--popy)' }} className="text-3xl font-bold text-white p-2 mysteryFont">
         Custom color: Popy and font Mystery-Quest
       </div>
