@@ -1,3 +1,16 @@
 @import "tailwindcss";
 @import './styles/colors.css';
 @import './styles/fonts.css';
+
+ .mysteryFont {
+  font-family: var(--Mystery-Quest);
+}
+.butterflyFont {
+  font-family: var(--Butterfly-Kids);
+}
+.sourGummyFont {
+  font-family: var(--Sour-Gummy);
+}
+.robotoFont {
+  font-family: var(--Roboto);
+}
