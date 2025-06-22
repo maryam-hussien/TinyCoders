@@ -19,8 +19,8 @@ className="w-full h-full object-cover object-top absolute top-0 left-0"
       />
  <CustomButton 
         text="Learn More"
-        style={{ backgroundColor: 'var(--white)' }}
-        className=" text-[var(--popy)] text-xl"
+        style={{ backgroundColor: 'transparent' }}
+        className=" text-[var(--white)] text-xl border border-[var(--white)] "
       />
         </div>
       </div>
