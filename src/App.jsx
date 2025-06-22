@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Header from "./layout/Header";
 function App() {
   return (
-    <div >
+    <div className="relative">
     <Router>
     <Header/>
       <Routes>
