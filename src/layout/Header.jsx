@@ -8,10 +8,10 @@ const Header = () => {
         
 
         {/* Main Nav Bar */}
-        <div className="flex justify-between items-center px-6 py-2">
+        <div className="flex justify-between items-center px-6 ">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Superowl" className="w-10 h-10" />
+          <div className="flex items-center ">
+            <img src="https://res.cloudinary.com/dwhn5gjgf/image/upload/t_transparent logo/v1750613150/photo_2025-06-22_20-24-54_vyvoum.jpg" alt="Superowl" className="w-25 h-25" />
             <span className="text-white font-bold text-2xl">TinyCoders</span>
           </div>
 
