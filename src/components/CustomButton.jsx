@@ -10,7 +10,7 @@ const CustomButton  = ({
   <button
       onClick={onClick}
       style={{ backgroundColor: color, ...style }}
-      className={`px-5 py-2 rounded-full shadow-md transition ${className}`}
+      className={`px-5 py-2 rounded-full shadow-md transition ${className} cursor-pointer hover:scale-105 active:scale-95`}
     >
       {text}
     </button>
