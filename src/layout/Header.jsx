@@ -31,7 +31,7 @@ const Header = () => {
            <CustomButton 
            text='Log In'
            color="var(--white)"
-           className="text-lg text-purple-700"/>
+           className="text-lg text-[#9b3d95]"/>
           </div>
         </div>
       </div>
