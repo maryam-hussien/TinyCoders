@@ -1,26 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home/Home";
+import Home from "./pages/Home";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 function App() {
   return (
-    <>
-    <Home />
-     <div style={{ backgroundColor: 'var(--popy)' }} className="text-3xl font-bold text-white p-2 mysteryFont">
-        Custom color: Popy and font Mystery-Quest
-      </div>
-
-      <div style={{ backgroundColor: 'var(--mango)'}} className="text-3xl font-bold text-white p-2 butterflyFont">
-        Custom color: Mango and font Butterfly-Kids
-      </div>
-      <div style={{ backgroundColor: 'var(--forest)'}} className="text-3xl font-bold text-white p-2 sourGummyFont">
-        Custom color: forest and font Sour-Gummy
-      </div>
-      <div style={{ backgroundColor: 'var(--lavender)'}} className="text-3xl font-bold text-white p-2 robotoFont">
-        Custom color: lavender and font Roboto
-      </div>
-      <div style={{ backgroundColor: 'var(--babyBlue)'}} className="text-3xl font-bold text-white p-2">
-        Custom color: babyBlue no font
-      </div>
-    </>
+    <div className="relative">
+    <Router>
+    <Header/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+         </Routes>
+         <Footer/>
+    </Router>    
+    </div>
   );
 }
 
