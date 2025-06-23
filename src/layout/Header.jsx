@@ -35,7 +35,7 @@ const Header = () => {
               <Link
                 key={index}
                 to={item.path}
-                className={`hover:underline hover:opacity-90 ${location.pathname === item.path ? "underline font-bold" : ""}`}
+                className={`hover:underline hover:opacity-90 ${location.pathname === item.path ? "underline font-bold" : ""} outline-none`}
               >
                 {item.name}
               </Link>
