@@ -1,14 +1,24 @@
-import { useState } from "react";
+import {  useMemo } from "react";
+import { Link, useLocation } from "react-router-dom";
 import CustomButton from "../components/CustomButton";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const navLinks = useMemo(() => [
+    { name: "Home", path: "/" },
+    { name: "Levels", path: "/levels" },
+    { name: "Games", path: "/games" },
+    { name: "Challanges", path: "/challanges" },
+    { name: "Profile", path: "/profile" },
+    { name: "AboutUs", path: "/about-us" },
+    { name: "ContactUs", path: "/contact-us" },
+  ], []);
 
   return (
     <div className="sticky top-0 overflow-visible z-50">
-      <div className="relative sourGummyFont">
-        <div className="bg-[var(--babyBlue)] h-full sm:h-24 px-4 py-3 flex justify-between items-center flex-wrap">
+      <div className="relative sourGummyFont bg-[var(--babyBlue)]">
+        <div className=" px-4 py-3 flex justify-between items-center flex-wrap ">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img
@@ -19,50 +29,33 @@ const Header = () => {
             <span className="text-white font-bold text-xl sm:text-3xl">TinyCoders</span>
           </div>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-6 text-white text-lg sm:text-2xl">
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Elements</a>
-            <a href="#">Gallery</a>
-            <a href="#">Events</a>
-            <a href="#">News</a>
-            <a href="#">Shop</a>
-          </nav>
+          {/* Desktop Navigation */}
+          <ul className="flex gap-6 text-white text-lg sm:text-2xl  p-10 sm:p-0">
+            {navLinks.map((item, index) => (
+              <Link
+                key={index}
+                to={item.path}
+                className={`hover:underline hover:opacity-90 ${location.pathname === item.path ? "underline font-bold" : ""}`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </ul>
 
-          {/* Right Side: Button + Hamburger */}
           <div className="flex items-center gap-4">
             <CustomButton
               text="Log In"
               color="var(--white)"
-              className="text-lg text-[#9b3d95]"
+              className="text-lg text-[var(--darkLavender)]"
             />
 
-            {/* Hamburger icon (only visible on small screens) */}
-            <button
-              className="text-white text-2xl md:hidden"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? <FaTimes /> : <FaBars />}
-            </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="md:hidden bg-[var(--babyBlue)] text-white px-4 py-2 space-y-2 text-lg">
-            <a href="#" className="block">Home</a>
-            <a href="#" className="block">Pages</a>
-            <a href="#" className="block">Elements</a>
-            <a href="#" className="block">Gallery</a>
-            <a href="#" className="block">Events</a>
-            <a href="#" className="block">News</a>
-            <a href="#" className="block">Shop</a>
-          </div>
-        )}
+      
 
         {/* Bottom Curve */}
-        <div className="absolute w-full h-6 bg-[var(--babyBlue)] rounded-b-[200%] z-[1] pointer-events-none"></div>
+        <div className="absolute w-full h-7 bg-[var(--babyBlue)] rounded-b-[200%] z-[1] pointer-events-none -bottom-6  "></div>
       </div>
     </div>
   );
