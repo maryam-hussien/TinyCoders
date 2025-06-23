@@ -13,12 +13,12 @@ className="w-full h-full object-cover object-top absolute top-0 left-0"
         <p className="mb-6 text-lg md:text-xl">Let’s become more creative with TinyCoders</p>
         <div className="flex gap-4">
          <CustomButton 
-        text="Get started"
+        text="Start For Free"
         style={{ backgroundColor: 'var(--popy)' }}
         className='text-xl'
       />
  <CustomButton 
-        text="Learn More"
+        text="Read More"
         style={{ backgroundColor: 'transparent' }}
         className=" text-[var(--white)] text-xl border border-[var(--white)] "
       />

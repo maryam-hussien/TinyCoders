@@ -1,8 +1,7 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[var(--babyBlue)] text-white  sourGummyFont mt-4 py-2">
+    <footer className="relative bg-[var(--babyBlue)] text-white  sourGummyFont mt-4 py-2 ">
       {/* Top Curve */}
       <div className="absolute  w-full h-8 -top-8 bg-[var(--babyBlue)] rounded-t-[200%] z-[1] pointer-events-none"></div>
 
