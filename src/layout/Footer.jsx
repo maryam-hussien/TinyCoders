@@ -42,7 +42,7 @@ const Footer = () => {
             <p>Location: Cairo, Egypt</p>
 
         {/* Bottom Text */}
-        <div className=" text-start text-[12] sm:text-[16] mt-4 text-[var(--darkLavender)]">
+        <div className=" text-start text-[12] sm:text-[16] mt-4 text-[var(--popy)]">
           © {new Date().getFullYear()} TinyCoders. All rights reserved.
         </div>
           </div>
