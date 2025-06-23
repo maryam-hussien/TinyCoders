@@ -1,10 +1,10 @@
 import {  useMemo } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation ,useNavigate} from "react-router-dom";
 import CustomButton from "../components/CustomButton";
 
 const Header = () => {
   const location = useLocation();
-
+const navigate = useNavigate();
   const navLinks = useMemo(() => [
     { name: "Home", path: "/" },
     { name: "Levels", path: "/levels" },
@@ -14,7 +14,9 @@ const Header = () => {
     { name: "AboutUs", path: "/about-us" },
     { name: "ContactUs", path: "/contact-us" },
   ], []);
-
+  const signin =() => {
+   navigate("/sign-in");
+  }
   return (
     <div className="sticky top-0 overflow-visible z-50">
       <div className="relative sourGummyFont bg-[var(--babyBlue)]">
@@ -47,7 +49,7 @@ const Header = () => {
               text="Log In"
               color="var(--white)"
               className="text-lg text-[var(--darkLavender)]"
-            />
+             onClick={signin}/>
 
           </div>
         </div>
