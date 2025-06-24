@@ -14,9 +14,9 @@ const [showPassword, setShowPassword] = useState(false);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 sourGummyFont ">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 sourGummyFont  ">
       {/* Card Container */}
-      <div className="flex flex-col md:flex-row bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-5xl h-[600px]">
+      <div className="flex flex-col md:flex-row bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-5xl h-[600px] m-6">
         
         {/* Left: Image */}
         <div className="md:w-1/2 w-full h-full">
