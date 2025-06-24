@@ -33,7 +33,7 @@ const SignUp = () => {
         {/* Left: Image */}
         <Link to="/signin" className="md:w-1/2 w-full h-full block group transition-transform duration-300 hover:scale-105">
           <img
-            src="https://res.cloudinary.com/drxaf5tun/image/upload/v1750780154/cloud1_dluxqf.jpg"
+            src="https://res.cloudinary.com/drxaf5tun/image/upload/v1750715608/cloud_g8uew6.jpg"
             alt="Go to Sign In"
             className="w-full h-full object-cover"
           />
