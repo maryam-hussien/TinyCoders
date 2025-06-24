@@ -63,7 +63,7 @@ const SecondSec = () => {
     .filter((level) => !level.isFinished)
     .slice(0, 3); // ✅ Only first 3
 
-  return (<section className="w-[90%] md:w-[80%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] border border-[var(--darkLavender)] rounded-2xl p-6 shadow-2xl">
+  return (<section className="w-[90%] md:w-[80%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-6 shadow-2xl">
     <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
   Available Levels
 </h2>
@@ -79,7 +79,7 @@ const SecondSec = () => {
     className="animated-letter"
     style={{
       animationDelay: `${idx * 0.1}s`,
-      color: ["#FF6B6B", "#FFA94D", "#FFD43B", "#69DB7C", "#38D9A9", "#4DABF7", "#9775FA", "#F783AC", "#FF922B", "#845EF7"][idx % 10],
+      color: ["#FFD43B", "#ee5a36", "#1a9562", "#1a9562", "#9fc4e8", "#1a9562", "#9b3d95", "#cfa4cc", "#ee5a36", "#1a9562"][idx % 10],
       marginRight: char === " " ? "8px" : "1px",
     }}
   >
@@ -152,7 +152,7 @@ const SecondSec = () => {
      <div className="w-fit mx-auto">
   <CustomButton
     text="More Levels..."
-    color="transparent"
+    color="white"
     className="text-lg text-[var(--darkLavender)] mt-4"
   />
 </div>
