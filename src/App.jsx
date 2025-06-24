@@ -1,21 +1,36 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import "./App.css";
 import Home from "./pages/Home";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import SignIn from "./pages/Signin";
+import SignUp from "./pages/Signup";
+
+// This part handles ONLY animated page content
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 function App() {
   return (
-    <div className="relative">
     <Router>
-    <Header/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-         <Route path="/sign-in" element={<SignIn  />} />
-         </Routes>
-         <Footer/>
-    </Router>    
-    </div>
+      <div className="relative">
+        <Header />
+        <AnimatedRoutes />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
