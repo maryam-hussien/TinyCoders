@@ -2,7 +2,7 @@ import CustomButton from '../../components/CustomButton';
 
 const FirstSec = () => {
   return (
-    <div className="relative w-full h-[500px]  overflow-hidden ">
+    <div className="relative w-full h-[540px]  overflow-hidden ">
       <img
         src="https://res.cloudinary.com/dwhn5gjgf/image/upload/v1750602891/1920x730_slide2_lohg4r.jpg"
         alt="Background"

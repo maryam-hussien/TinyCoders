@@ -63,7 +63,7 @@ const SecondSec = () => {
     .filter((level) => !level.isFinished)
     .slice(0, 3); // ✅ Only first 3
 
-  return (<section className="w-[90%] md:w-[80%] mx-auto -mt-10 z-[5] relative sourGummyFont bg-[#ffffff] border border-[var(--darkLavender)] rounded-2xl p-6">
+  return (<section className="w-[90%] md:w-[80%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] border border-[var(--darkLavender)] rounded-2xl p-6 shadow-2xl">
     <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
   Available Levels
 </h2>
@@ -71,8 +71,8 @@ const SecondSec = () => {
   <div className="flex flex-col md:flex-row gap-6 items-center ">
 
     {/* 👾 Robot + Rainbow Title */}
-    <div className="flex flex-col items-start md:items-start ">
-      <div className="text-2xl md:text-5xl font-bold mb-1">
+    <div className="flex flex-col items-center md:items-start ">
+      <div className="text-2xl sm:text-4xl font-bold mb-1 ">
 {"Let's Learn".split("").map((char, idx) => (
   <span
     key={idx}
@@ -96,12 +96,12 @@ const SecondSec = () => {
     </div>
 
     {/* 🧩 Levels List */}
-    <div className="flex flex-col gap-4 md:w-2/3 w-full">
+    <div className="flex flex-col gap-4 md:w-2/3 w-full ">
       {activeLevels.length > 0 ? (
         activeLevels.map((level) => (
           <div
             key={level.id}
-            className="w-full bg-[var(--babyBlue)] text-white rounded-xl p-2 shadow-md"
+            className="w-full  text-white rounded-xl p-2 shadow-xl"
             style={{ backgroundColor: level.color }}
           >
             <div className="flex justify-between items-center mb-2">
