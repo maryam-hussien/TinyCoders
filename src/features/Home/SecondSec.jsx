@@ -63,7 +63,7 @@ const SecondSec = () => {
     .filter((level) => !level.isFinished)
     .slice(0, 3); // ✅ Only first 3
 
-  return (<section className="w-[85%] md:w-[80%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-3 shadow-2xl">
+  return (<section className="w-[85%]  mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-4 shadow-2xl">
     <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
   Available Levels
 </h2>

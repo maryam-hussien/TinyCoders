@@ -28,7 +28,7 @@ const navigate = useNavigate();
               alt="TinyCoders"
               className="w-14 h-14"
             />
-            <span className="text-white font-bold text-xl sm:text-3xl">TinyCoders</span>
+            <span className="text-white font-bold text-xl sm:text-3xl">Tiny<span className='text-[var(--popy)]'>Coders</span></span>
           </div>
 
           {/* Desktop Navigation */}
