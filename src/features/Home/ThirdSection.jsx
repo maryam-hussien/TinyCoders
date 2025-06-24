@@ -1,8 +1,7 @@
-import React from 'react'
 
 const ThirdSection = () => {
   return (
-    <div>ThirdSection</div>
+    <div className="h-60 text center border mt-5 mb-10">what we offer</div>
   )
 }
 
