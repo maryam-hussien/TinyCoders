@@ -68,7 +68,7 @@ const SecondSec = () => {
   Available Levels
 </h2>
 
-  <div className="flex flex-col md:flex-row gap-6 items-center ">
+  <div className="flex flex-col md:flex-row gap-2 items-center ">
 
     {/* 👾 Robot + Rainbow Title */}
     <div className="flex flex-col items-center md:items-start ">
@@ -96,7 +96,7 @@ const SecondSec = () => {
     </div>
 
     {/* 🧩 Levels List */}
-    <div className="flex flex-col gap-4 md:w-2/3 w-full ">
+    <div className="flex flex-col gap-4 md:w-[92%] w-full ">
       {activeLevels.length > 0 ? (
         activeLevels.map((level) => (
           <div
