@@ -63,7 +63,7 @@ const SecondSec = () => {
     .filter((level) => !level.isFinished)
     .slice(0, 3); // ✅ Only first 3
 
-  return (<section className="w-[90%] md:w-[80%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-6 shadow-2xl">
+  return (<section className="w-[85%] md:w-[80%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-3 shadow-2xl">
     <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
   Available Levels
 </h2>
@@ -72,7 +72,7 @@ const SecondSec = () => {
 
     {/* 👾 Robot + Rainbow Title */}
     <div className="flex flex-col items-center md:items-start ">
-      <div className="text-2xl sm:text-4xl font-bold mb-1 ">
+      <div className="text-xl md:text-4xl font-bold mb-1 ">
 {"Let's Learn".split("").map((char, idx) => (
   <span
     key={idx}
@@ -91,7 +91,7 @@ const SecondSec = () => {
       <img
         src="https://res.cloudinary.com/dwhn5gjgf/image/upload/t_lets learn robot/v1750771847/photo_2025-06-24_16-29-57_hfcei3.jpg"
         alt="Let's Learn Robot"
-        className="w-40 md:w-65 h-65"
+        className="w-40 md:w-65 md:h-65 h-40"
       />
     </div>
 
