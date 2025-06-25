@@ -66,15 +66,15 @@ const activeLevels = mockLevels
 
 
   return (
-    <section className="w-[85%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-4 shadow-2xl mb-8">
-      <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
+    <section className="w-[88%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl px-4 py-8 shadow-2xl mb-8 ">
+      <h2 className="text-2xl md:text-4xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
         Available Levels
       </h2>
 
       <div className="flex flex-col md:flex-row gap-2 items-center">
         {/* Robot + Animated Title */}
-        <div className="flex flex-col items-center md:items-start">
-          <div className="text-xl md:text-4xl font-bold mb-1">
+        <div className="flex flex-col items-center md:items-center">
+          <div className="text-xl md:text-[40px] font-bold ">
             {"Let's Learn".split("").map((char, idx) => (
               <span
                 key={idx}
@@ -92,12 +92,12 @@ const activeLevels = mockLevels
           <img
             src="https://res.cloudinary.com/dwhn5gjgf/image/upload/t_lets learn robot/v1750771847/photo_2025-06-24_16-29-57_hfcei3.jpg"
             alt="Let's Learn Robot"
-            className="w-40 md:w-65 md:h-65 h-40"
+            className="w-40 md:w-80 md:h-80 h-40 hover:animate-bounce transition duration-500"
           />
         </div>
 
         {/* Levels */}
-        <div className="flex flex-col gap-4 md:w-[92%] w-full">
+        <div className="flex flex-col gap-4 md:w-[85%] w-full">
           {activeLevels.length > 0 ? (
             activeLevels.map((level) => (
               <div

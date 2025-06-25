@@ -10,7 +10,9 @@
 }
 .robotoFont {
   font-family: var(--Roboto);
-}@keyframes floatUpDown {
+}
+
+@keyframes floatUpDown {
   0%, 100% {
     transform: translateY(0);
   }
