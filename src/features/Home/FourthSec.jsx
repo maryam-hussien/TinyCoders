@@ -5,19 +5,19 @@ const FourthSec = () => {
   const challenges = [
   {
     id: 1,
-    icon: <FaPuzzlePiece className="text-yellow-400 text-3xl" />,
+    icon: <FaPuzzlePiece className="text-[var(--mango)] text-3xl" />,
     title: "Solve a Puzzle",
     points: 20,
   },
   {
     id: 2,
-    icon: <FaGamepad className="text-pink-400 text-3xl" />,
+    icon: <FaGamepad className="text-[var(--forest)] text-3xl" />,
     title: "Play a Game",
     points: 30,
   },
   {
     id: 3,
-    icon: <FaStar className="text-blue-400 text-3xl" />,
+    icon: <FaStar className="text-[var(--babyBlue)] text-3xl" />,
     title: "Answer a Quiz",
     points: 15,
   },
