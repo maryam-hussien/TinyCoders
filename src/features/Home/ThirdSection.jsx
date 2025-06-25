@@ -31,7 +31,7 @@ const ThirdSection = () => {
 
   return (
     <div
-      className="py-20 pb-10 bg-cover bg-center text-[var(--lavender)] sourGummyFont px-15"
+      className="py-20 pb-10 bg-cover bg-center text-[var(--lavender)] sourGummyFont px-15 mt-10"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div>
