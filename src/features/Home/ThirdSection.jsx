@@ -10,39 +10,39 @@ const ThirdSection = () => {
     {
       title: "Games",
       desc: "Engaging games that help reinforce learning in a fun way.",
-      icon: <GiPuzzle className="text-[var(--popy)] text-2xl" />,
+      icon: <GiPuzzle className="text-[var(--popy)] text-3xl" />,
     },
     {
       title: "Challenges",
       desc: "Exciting challenges to test and motivate your child.",
-      icon: <GiTrophyCup className="text-[var(--mango)] text-2xl" />,
+      icon: <GiTrophyCup className="text-[var(--mango)] text-3xl" />,
     },
     {
       title: "Funny Learning Way",
       desc: "Creative and funny methods to make learning enjoyable.",
-      icon: <GiClown className="text-[var(--babyBlue)] text-2xl" />,
+      icon: <GiClown className="text-[var(--babyBlue)] text-3xl" />,
     },
     {
       title: "Bonus Points",
       desc: "Reward system to encourage participation and progress.",
-      icon: <FaGift className="text-[var(--forest)] text-2xl" />,
+      icon: <FaGift className="text-[var(--forest)] text-3xl" />,
     },
   ];
 
   return (
     <div
-      className="py-20 pb-10 bg-cover bg-center text-[var(--lavender)] sourGummyFont px-10"
+      className="py-20 pb-10 bg-cover bg-center text-[var(--lavender)] sourGummyFont px-15"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div>
         <h2 className="text-4xl text-center font-bold mb-12">What We Offer</h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-4 mb-35">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 mb-35">
           {offers.map((item, index) => (
             <div
               key={index}
               className="bg-white text-gray-800 rounded-xl p-8 shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer text-center"
             >
-              <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="flex items-center justify-center gap-2 mb-3 ">
                 {item.icon}
                 <h3 className="text-xl font-semibold">{item.title}</h3>
               </div>

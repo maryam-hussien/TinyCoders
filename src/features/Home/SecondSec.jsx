@@ -66,7 +66,7 @@ const activeLevels = mockLevels
 
 
   return (
-    <section className="w-[88%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl px-4 py-8 shadow-2xl mb-8 ">
+    <section className="w-[90%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl px-4 py-8 shadow-2xl mb-8 ">
       <h2 className="text-2xl md:text-4xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
         Available Levels
       </h2>
@@ -92,7 +92,7 @@ const activeLevels = mockLevels
           <img
             src="https://res.cloudinary.com/dwhn5gjgf/image/upload/t_lets learn robot/v1750771847/photo_2025-06-24_16-29-57_hfcei3.jpg"
             alt="Let's Learn Robot"
-            className="w-40 md:w-80 md:h-80 h-40 hover:animate-bounce transition duration-500"
+            className="w-40 md:w-80 md:h-80 h-40 "
           />
         </div>
 

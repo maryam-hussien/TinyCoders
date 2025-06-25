@@ -26,7 +26,7 @@ const FourthSec = () => {
   const currentPoints = 80; // You can get this from props or API
 
   return (
-    <section className="w-[85%]  mx-auto   sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-4 shadow-2xl h-100 mb-8">
+    <section className="w-[90%]  mx-auto   sourGummyFont bg-[#e9e8e8f0] rounded-4xl p-4 shadow-2xl h-100 mb-8 py-10 -mt-17">
       <h2 className="text-center text-2xl md:text-3xl font-bold text-[var(--darkLavender)] mb-4 ">
         🎯 Your Current Points
       </h2>
