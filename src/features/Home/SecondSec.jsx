@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import CustomButton from "../../components/CustomButton";
 import LevelCard from "../../components/LevelCard";
 
@@ -54,6 +55,7 @@ const mockLevels = [
 
 
 const SecondSec = () => {
+  const navigate = useNavigate()
  const colorPalette = ["var(--forest)", "var(--popy)", "var(--lavender)"];
 
 const activeLevels = mockLevels
@@ -69,7 +71,7 @@ const activeLevels = mockLevels
   return (
     <section className="w-[90%] mx-auto -mt-7 z-[5] relative sourGummyFont bg-[#e9e8e8f0] rounded-4xl px-4 py-8 shadow-2xl mb-8 ">
       <h2 className="text-2xl md:text-4xl text-center font-bold text-[var(--darkLavender)] mb-6 sourGummyFont">
-        Available Levels
+       🧩 Available Levels
       </h2>
 
       <div className="flex flex-col md:flex-row gap-2 items-center">
@@ -113,6 +115,7 @@ const activeLevels = mockLevels
               text="More Levels..."
               color="white"
               className="text-lg text-[var(--darkLavender)] mt-4"
+              onClick={() => navigate('/levels')}
             />
           </div>
         </div>

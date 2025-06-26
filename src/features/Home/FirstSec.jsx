@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import CustomButton from '../../components/CustomButton';
 
 const FirstSec = () => {
+  const navigate=useNavigate()
   return (
     <div className="relative w-full md:h-[550px] h-[520px]  overflow-hidden ">
       <img
@@ -17,11 +19,14 @@ loading="lazy"
         text="Start For Free"
         style={{ backgroundColor: 'var(--popy)' }}
         className='text-xl'
+        onClick={() => navigate('/sign-in')}
       />
  <CustomButton 
         text="Read More"
         style={{ backgroundColor: 'transparent' }}
         className=" text-[var(--white)] text-xl border border-[var(--white)] "
+                onClick={() => navigate('/abouts-us')}
+
       />
         </div>
       </div>

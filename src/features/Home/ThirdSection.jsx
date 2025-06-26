@@ -1,8 +1,10 @@
 import { GiPuzzle, GiTrophyCup, GiClown } from "react-icons/gi";
 import { FaGift } from "react-icons/fa";
 import CustomButton from "../../components/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const ThirdSection = () => {
+  const navigate = useNavigate();
   const bgImage =
     "https://res.cloudinary.com/drxaf5tun/image/upload/v1750793728/offer-fotor-enhance-20250624223452_axobvn.jpg";
 
@@ -47,7 +49,9 @@ const ThirdSection = () => {
                 <h3 className="text-xl font-semibold">{item.title}</h3>
               </div>
               <p className="text-sm leading-relaxed mb-4">{item.desc}</p>
-              <CustomButton  color="var(--lavender)" text ="Learn More" className="mt-auto text-sm font-medium  text-white py-1.5 px-4 rounded-full transition duration-200"/>
+              <CustomButton  color="var(--lavender)" text ="Learn More" className="mt-auto text-sm font-medium  text-white py-1.5 px-4 rounded-full transition duration-200"
+                      onClick={() => navigate('/about-us')}
+/>
                 
         
             </div>

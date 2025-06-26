@@ -62,9 +62,9 @@ const Levels = () => {
       </div>
 
       {/* Robot Tip & Challenge */}
-      <div className="bg-[#fff7e8] mt-10 rounded-3xl p-6 shadow-xl flex flex-col md:flex-row items-center gap-4">
+      <div className="bg-white mt-10 rounded-3xl p-6 shadow-xl flex flex-col md:flex-row items-center gap-4">
         <img
-          src="https://res.cloudinary.com/dwhn5gjgf/image/upload/v1750771847/photo_2025-06-24_16-29-57_hfcei3.jpg"
+          src="https://res.cloudinary.com/dwhn5gjgf/image/upload/t_transparent logo/v1750771847/photo_2025-06-24_16-29-57_hfcei3.jpg"
           alt="robot"
           className="w-32 h-32"
         />
