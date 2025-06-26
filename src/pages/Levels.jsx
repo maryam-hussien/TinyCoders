@@ -42,16 +42,7 @@ const Levels = () => {
 
       </div>
 
-      {/* Points Summary */}
-      <div className="bg-white rounded-2xl shadow-lg p-4 text-center mb-6">
-        <p className="text-lg font-semibold text-[var(--popy)]">
-          🌟 You have <span className="text-[var(--forest)]">420</span> points!
-        </p>
-        <p className="text-sm mt-1 text-[var(--darkLavender)]">
-  💡 Earn more points by completing level lessons, quizzes, and extra challenges!
-</p>
-
-      </div>
+     
 
       {/* Levels Grid with LevelCard */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

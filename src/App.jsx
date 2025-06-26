@@ -7,6 +7,7 @@ import Footer from "./layout/Footer";
 import SignIn from "./pages/Signin";
 import SignUp from "./pages/Signup";
 import Levels from "./pages/Levels";
+import Games from "./pages/Games";
 
 // This part handles ONLY animated page content
 const AnimatedRoutes = () => {
@@ -19,6 +20,8 @@ const AnimatedRoutes = () => {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path='/levels' element={<Levels/>}/>
+        <Route path="/games" element={<Games/>}/>
+        <Route path="*" element={<h1 className="text-center text-2xl font-bold mt-20">404 - Page Not Found</h1>} />
       </Routes>
     </AnimatePresence>
   );
