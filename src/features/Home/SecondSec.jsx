@@ -56,7 +56,7 @@ const mockLevels = [
 
 const SecondSec = () => {
   const navigate = useNavigate()
- const colorPalette = ["var(--forest)", "var(--popy)", "var(--lavender)"];
+ const colorPalette = [ "var(--lavender)","var(--popy)","var(--babyBlue)"];
 
 const activeLevels = mockLevels
   .filter((level) => !level.isFinished)
